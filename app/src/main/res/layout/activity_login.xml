@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    tools:context="com.alkasilverlake.activity.LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:visibility="visible"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/lr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="220dp"
+                android:layout_height="100dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/logo" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                tools:ignore="NotSibling">
+
+                <EditText
+                    android:id="@+id/log_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/disp_edit"
+                    android:gravity="center"
+                    android:hint="@string/log_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/log_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/log_email"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/disp_edit"
+                    android:gravity="center"
+                    android:hint="@string/log_pass_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/log_pass"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Remember Me"
+                    android:textColor="@color/colorGray"
+                    app:buttonTint="@color/colorGray"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/log_pass"
+                    android:layout_alignEnd="@+id/log_pass"
+                    android:layout_marginTop="11dp"
+                    android:text="Forget Password ?"
+                    android:textColor="@color/colorGray"
+                    android:textSize="14dp"
+                    tools:ignore="RtlCompat" />
+
+                <Button
+                    android:id="@+id/log_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/checkBox2"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="70dp"
+                    android:background="@drawable/log_btn"
+                    android:text="LOGIN"
+                    android:textColor="@color/colorSky" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/log_btn"
+                    android:layout_alignStart="@+id/log_pass"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_toLeftOf="@+id/log_or"
+                    android:background="@color/colorSky"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/log_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/log_btn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="28dp"
+                    android:text="OR"
+                    android:textColor="@color/colorGray"
+                    android:textSize="15dp"
+                    tools:ignore="RtlCompat" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/log_btn"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/log_or"
+                    android:background="@color/colorSky"
+                    tools:ignore="RtlCompat" />
+
+
+                <LinearLayout
+                    android:id="@+id/log_li1"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/log_or"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/face_btn"
+                    tools:ignore="Orientation">
+
+
+                    <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="f"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorWhite"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="LOGIN WITH FACEBOOK"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/log_acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/log_li1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6dp"
+                    android:text="Don't have an account?"
+                    android:textColor="@color/colorGray"
+                    android:textSize="12dp"
+                    tools:ignore="RtlCompat" />
+
+
+                <Button
+                    android:id="@+id/log_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/log_acc"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/disp_edit"
+                    android:text="Sign UP"
+                    android:textColor="@color/colorWhite" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

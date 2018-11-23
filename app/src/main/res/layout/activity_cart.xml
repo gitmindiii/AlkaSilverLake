@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+    tools:context="com.alkasilverlake.activity.TabActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="CART"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rr">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cart_recycler_view"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_recycler_view"
+                android:text="Total"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorDarkGray"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/c_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_recycler_view"
+                android:text="$"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="80dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/cart_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_recycler_view"
+                android:text="Total"
+                android:textSize="18sp"
+                android:layout_alignLeft="@+id/c_d"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/t_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_total_price"
+                android:text="Have you read term &amp; conditions?"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:id="@+id/term_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_c"
+                android:text="@string/t_c"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:textColor="@color/colorSky"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/log_sign"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/disp_edit"
+                android:textColor="@color/colorWhite"
+                android:text="Proceed To Checkout"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/term_con"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardUseCompatPadding="true"
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:id="@+id/water_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:text="3 Gallan Of Alkaline(Plastic Battle)"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/water_name"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:text="$"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/water_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/water_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/dollar"
+                android:text="12.00"
+                android:textColor="@color/colorBlack"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/water_bo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/water_name"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/water_price"
+                android:text="/Bottle"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="12sp"
+                tools:ignore="RtlCompat" />
+
+
+            <LinearLayout
+                android:id="@+id/inc_li"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/water_name"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                >
+
+
+                <TextView
+                    android:id="@+id/inc_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/addandsub"
+                    android:textColor="@color/colorSky"
+                    android:text="Add"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/li1_im_inc_add"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:duplicateParentState="true"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/add"
+                    app:srcCompat="@drawable/ic_add_black_24dp"
+                   />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/inc_li1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/water_name"
+                android:layout_marginTop="10dp"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                >
+
+                <ImageView
+                    android:id="@+id/im_inc_sub"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/sub"
+                    app:srcCompat="@drawable/ic_remove_black_24dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_Bottle_quntituy"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/inc_number"
+                    android:textColor="@color/colorSky"
+                    android:text="1"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/im_inc_add"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/add"
+                    app:srcCompat="@drawable/ic_add_black_24dp"
+                    />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

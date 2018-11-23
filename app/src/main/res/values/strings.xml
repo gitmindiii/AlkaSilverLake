@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AlkaSilverLake</string>
+    <string name="log_email_hint">EMAIL</string>
+    <string name="log_pass_hint">PASSWORD</string>
+    <string name="reg_name_hint">FULL NAME</string>
+    <string name="reg_email_hint">EMAIL</string>
+    <string name="reg_pass_hint">PASSWORD</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="t_c">TERMS &amp; CONDITIONS</string>
+
+</resources>

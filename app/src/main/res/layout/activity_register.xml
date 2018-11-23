@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_bg"
+    tools:context="com.alkasilverlake.activity.Register">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/lr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:id="@+id/reg_logo"
+                android:layout_width="220dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/bcm_logo"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reg_logo"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="30dp"
+                tools:ignore="NotSibling">
+
+
+                <EditText
+                    android:id="@+id/reg_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:gravity="center"
+                    android:hint="@string/reg_name_hint"
+                    android:textColorHint="@color/colorSky"
+                    android:textColor="@color/colorSky"
+                    android:textSize="15dp"
+                    android:inputType="text"
+                    android:background="@drawable/log_btn"
+                    />
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:gravity="center"
+                    android:hint="@string/reg_email_hint"
+                    android:textColorHint="@color/colorSky"
+                    android:textColor="@color/colorSky"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_below="@+id/reg_name"
+                    android:background="@drawable/log_btn"
+                    />
+
+                <EditText
+                    android:id="@+id/reg_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:gravity="center"
+                    android:hint="@string/log_pass_hint"
+                    android:textColorHint="@color/colorSky"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorSky"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/reg_email"
+                    android:inputType="textPassword"
+                    android:background="@drawable/log_btn"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/reg_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/log_btn"
+                    android:textColor="@color/colorSky"
+                    android:text="Sign Up"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/reg_pass"
+                    />
+
+
+                <TextView
+                    android:id="@+id/reg_acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textColor="@color/colorGray"
+                    android:textSize="12dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/reg_btn"
+                    tools:ignore="RtlCompat" />
+
+
+                <Button
+                    android:id="@+id/reg_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/disp_edit"
+                    android:textColor="@color/colorWhite"
+                    android:text="Login"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/reg_acc"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
