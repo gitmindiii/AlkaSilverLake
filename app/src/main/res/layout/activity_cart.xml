@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorLightGray"
-    tools:context="com.alkasilverlake.activity.TabActivity">
+    tools:context="com.mindiii.alkasilverlake.activity.TabActivity">
 
 
     <RelativeLayout
